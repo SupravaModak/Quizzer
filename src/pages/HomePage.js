@@ -11,7 +11,7 @@ const HomePage = () => {
 
   return (
     <div className="home-container">
-      <h1 className="home-title">🧠 Welcome to the Quiz App</h1>
+      <h1 className="home-title">🧠 Welcome to the Quizzer App</h1>
       <p className="home-subtitle">Test your knowledge with fun quizzes!</p>
       <div className="quiz-list">
         {quizzes.map((quiz) => (
