@@ -1,0 +1,94 @@
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff7e6;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  /* ✅ Buttons */
+  .option-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin: 10px;
+    border: none;
+    transition: all 0.3s;
+  }
+  
+  .option-btn:hover {
+    background-color: #d1d1d1;
+  }
+  
+  .option-btn.selected {
+    background-color: #17a2b8;
+    color: white;
+  }
+  
+  .option-btn.correct {
+    background-color: #28a745;
+    color: white;
+    border: 2px solid #218838;
+    animation: correct-bounce 0.5s ease-in-out;
+  }
+  
+  .option-btn.incorrect {
+    background-color: #dc3545;
+    background-color: #dc3545;
+    color: white;
+    border: 2px solid #c82333;
+    animation: shake 0.3s ease-in-out;
+  }
+  .primary-btn {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: 2px solid #004080;
+  }
+  
+  .primary-btn:disabled {
+    background: #ccc;
+    border: 2px solid #999;
+    cursor: not-allowed;
+  }
+  
+  .primary-btn:hover:enabled {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    transform: translateY(-2px);
+    box-shadow: 6px 8px 14px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 🟡 Next Button */
+  .secondary-btn {
+    background: linear-gradient(135deg, #ffcc00, #e0a800);
+    color: black;
+    border: 2px solid #b58900;
+  }
+  
+  .secondary-btn:hover {
+    background: linear-gradient(135deg, #e0a800, #c69500);
+    transform: translateY(-2px);
+    box-shadow: 6px 8px 14px rgba(0, 0, 0, 0.2);
+  }
+
+  .primary-btn, .secondary-btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 16px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: inline-block;
+  }
